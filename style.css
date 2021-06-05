@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: whitesmoke;
 }
 
 #header {
@@ -45,7 +46,7 @@
     display: block;
   }
 
-  .container {
+  #container {
     margin: 130px 0px 20px 0px;      
     border: solid red;
   }
@@ -59,7 +60,7 @@
   }
 }
 
-.container {
+#container {
   display: flex;
   flex-direction: column;
   align-items: center;   
@@ -67,9 +68,10 @@
 }
 
 #video {
-  margin: 100px 0px 20px 0px;      
+  margin: 140px 0px 20px 0px;      
   /* margin-top: 100px; */
   border: dodgerblue solid;
+  width: 30rem;
 }
 
 #form {
@@ -79,17 +81,26 @@
 }
 
 #email {
-  margin-bottom: 5px;
+  margin: 7px 0px 7px 0px;
   width: 17rem;
+  font-size: larger;
+  padding: 7px;
+  
 }
 
 #submit {
   width: 10rem;
-
+  border: none;
+  border-radius: 3px;
+  background-color: dodgerblue;
+  color: whitesmoke;
+  padding: 7px;
+  cursor: pointer;
+  font-size: larger;
 }
   
 
-.card-container {
+#prices-container {
   display: flex;
 }
 
