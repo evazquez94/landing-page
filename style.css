@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   background-color: whitesmoke;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
 }
 
 #header {
@@ -17,6 +19,13 @@
 #header-img {
   width: 17vh;
   height: 15vh;
+  margin: 10px;
+}
+
+#name-logo {
+  margin-top: 20px;
+  padding-right: 450px;
+  display: block;
 }
 
 #nav-bar {
@@ -31,7 +40,7 @@
   text-align: center;  
 }
 
-@media (max-width: 610px) {
+@media (max-width: 638px) {
   header {
     flex-direction: column;
     align-items: center;
@@ -48,15 +57,38 @@
 
   #container {
     margin: 130px 0px 20px 0px;      
-    border: solid red;
+    /* border: solid red; */
   }
-
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1080px) {
+  #nav-bar {
+    display: flex;
+    flex-direction: column;
+  }
+
   .nav-link {      
     padding: 0px 55px 0px 55px; 
     margin-top: 5px;   
+  }
+
+    #name-logo {
+    display: block;
+    padding: 0;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 1525px) {
+  .nav-link {          
+    margin-top: 5px;   
+  }
+
+  #name-logo {
+    display: block;
+    padding: 0;
+    margin-top: 20px;
+    /* padding-right: 250px; */
   }
 }
 
@@ -64,7 +96,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;   
-  border: solid red;
+  /* border: solid red; */
 }
 
 #video {
@@ -104,25 +136,61 @@
 
 #prices-container {
   display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 640px) {
+  #prices-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    border: solid black 1px;    
+    margin: 20px;  
+  }
+  
 }
 
 .card {
   display: flex;
   flex-direction: column;
   border: solid black 1px;
-  width: 30%;
-  margin: 20px;
-  padding: 10px;
+  width: 25rem;
+  margin: 20px;  
+  align-items: center;
 }
 
 .card h3 {
   text-align: center;
+  font-size: x-large;
+  padding: 8px;
+  background-color: coral;
+  width: 100%;
 }
 
 .card h2 {
   text-align: center;
+  padding: 5px;
 }
 
 .card p {
+  text-align: center;  
+  width: 50%;
+  font-size: medium;
+  line-height: 2em;
+}
+
+.card button {
+  background-color: orange;
+  border: none;
+  border-radius: 2px;
+  width: 40%;
+  padding: 8px;
+  font-size: medium;
+  margin: 10px;
   text-align: center;
+  cursor: pointer;
 }
