@@ -55,6 +55,7 @@
 
   .nav-link {      
     display: block;
+    margin-bottom: 10px;
   }
 
   #container {
@@ -110,6 +111,7 @@
   display: flex;
   flex-direction: column;  
   align-items: center;
+  margin: 20px;
 }
 
 #email {
@@ -126,9 +128,9 @@
   border: none;
   border-radius: 3px;
   background-color: orange;
-  padding: 7px;
+  padding: 8px;
   cursor: pointer;
-  font-size: larger;
+  font-size: medium;
 }
   
 /* CARD OFFERS  */
@@ -141,16 +143,20 @@
 @media (max-width: 640px) {
   #prices-container {
     flex-direction: column;
-    align-items: center;
+    align-items: center;    
   }
 
   .card {
     display: flex;
     flex-direction: column;
     border: solid black 1px;    
-    margin: 20px;  
+    margin: 20px; 
+    width: 17rem !important;     
+  }  
+
+  #video {
+    width: 20rem; 
   }
-  
 }
 
 .card {
@@ -178,7 +184,7 @@
 .card p {
   text-align: center;  
   width: 50%;
-  font-size: medium;
+  font-size: larger;
   line-height: 2em;
 }
 
@@ -186,7 +192,7 @@
   background-color: orange;
   border: none;
   border-radius: 2px;
-  width: 40%;
+  width: 10rem;
   padding: 8px;
   font-size: medium;
   margin: 10px;
